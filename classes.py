@@ -1,7 +1,6 @@
 class Var:
     name: str
     times: int
-    init: int
 
 
 class Fov:
