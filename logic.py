@@ -57,10 +57,11 @@ def check_ops(text: str):
             ops['>'] -= 1
     ops["#include"] = len(lst)
 
-    lst = re.findall(brackets, text)
-    lst = set(lst)
-    for br in lst:
-        ops[br] = len(re.findall(br, text))
+    for br in brackets:
+        lst = re.findall(br, text)
+        if len(lst) == 0:
+            continue
+        ops[lst[0]] = len(lst)
 
     ops["cout"] = len(re.findall(cout, text))
     ops['cin'] = len(re.findall(cin, text))

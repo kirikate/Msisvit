@@ -6,7 +6,7 @@ import logic as l
 
 main = tk.Tk()
 main.title('Метрика Холстэда')
-main.geometry("800x500")
+main.geometry("800x800")
 file = open("Source.cpp")
 text = file.read()
 file.close()
