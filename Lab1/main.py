@@ -7,7 +7,7 @@ import logic as l
 main = tk.Tk()
 main.title('Метрика Холстэда')
 main.geometry("800x800")
-file = open("Source.cpp")
+file = open("D:\Msisvit\Lab1\Source.cpp")
 text = file.read()
 file.close()
 print(text)

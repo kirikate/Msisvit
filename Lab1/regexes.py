@@ -30,7 +30,7 @@ operators: list = [r'(?<!\+)\+(?![\+=])',
                    r'while',
                    r'switch',
                    r'delete',
-                   r'delete\[\]'
+                   r'delete'
                    r'>=',
                    r'<=',
                    r'if',
@@ -41,7 +41,7 @@ operators: list = [r'(?<!\+)\+(?![\+=])',
                    r'\[']
 cout: str = r'(?:std::\s*)?cout(?:\s*<<\s*\w+)+'
 cin: str = r'(?:std::\s*)?cin(?:\s*>>\s*\w+)+'
-brackets: str = [r'(?<!\w\s?)\(',
+brackets: str = [r'(?<!\w\s)(?<!\w)\(',
                  r'{']
 include: str = r'#include \s*(<|")([^>"]+)([>"])'
 
