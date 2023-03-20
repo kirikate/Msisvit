@@ -38,7 +38,9 @@ operators: list = [r'(?<!\+)\+(?![\+=])',
                    r'(?<!cin )>>',
                    r'&=',
                    r'setlocale',
-                   r'\[']
+                   r'\[',
+                   r';']
+
 cout: str = r'(?:std::\s*)?cout(?:\s*<<\s*\w+)+'
 cin: str = r'(?:std::\s*)?cin(?:\s*>>\s*\w+)+'
 brackets: str = [r'(?<!\w\s)(?<!\w)\(',

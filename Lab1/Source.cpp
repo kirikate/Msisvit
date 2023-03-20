@@ -128,6 +128,7 @@ int main()
     Showarray1(arr, rows, cols);
     Showarray2(arr1, size);
     result1(arr1, size);
+
     delete[] arr1;
     for (int i = 0; i < rows; i++)
     {
